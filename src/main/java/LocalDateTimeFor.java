@@ -22,12 +22,6 @@ public class LocalDateTimeFor {
         int hour = currentDateTime.getHour();                 // 16
         int minute = currentDateTime.getMinute();             // 55
         int second = currentDateTime.getSecond();             // 31
-
-        System.out.println(year);
-        System.out.println(day);
-        System.out.println(hour);
-        System.out.println(minute);
-        System.out.println(second);
     }
 
     public static void 날짜_시간_조작() {
