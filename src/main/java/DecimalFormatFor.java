@@ -10,18 +10,18 @@ public class DecimalFormatFor {
     public static void 포멧들(){
         // 100을 곱하고 뒤에 %를 넣어준다.
         DecimalFormat df = new DecimalFormat("#.##%");
-        System.out.println(df.format(0.1234)); // 12.34%
-        System.out.println(df.format(1)); // 100%
-        System.out.println(df.format(2)); // 200%
-        System.out.println(df.format(0.5)); // 50%
+        df.format(0.1234); // 12.34%
+        df.format(1); // 100%
+        df.format(2); // 200%
+        df.format(0.5); // 50%
 
         // "12.30%" 같이 소수점 이하 두 자리를 항상 유지하려면
         DecimalFormat dff = new DecimalFormat("0.00%");
-        System.out.println(dff.format(0.1234)); // 12.34%
-        System.out.println(dff.format(0.5)); // 50.00%
+        dff.format(0.1234); // 12.34%
+        dff.format(0.5); // 50.00%
 
         // 돈 : 천원 단위 콤마 넣기 + 원
         DecimalFormat dfff = new DecimalFormat("#,###원");
-        System.out.println(dfff.format(100000000)); // 100,000,000원
+        dfff.format(100000000); // 100,000,000원
     }
 }
